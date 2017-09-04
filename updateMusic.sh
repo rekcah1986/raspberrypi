@@ -5,4 +5,5 @@ ID=489448787
 DIR=playlist$ID
 #rm -rf $DIR
 netease-dl playlist --id $ID
-find $DIR/*.mp3 > clock.lst 
+mv $DIR/*.mp3 /home/pi/Music
+find /home/pi/Music/*.mp3 > clock.lst 
