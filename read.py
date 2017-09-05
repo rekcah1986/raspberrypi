@@ -5,6 +5,8 @@ import sys
 APP_ID =  '8932722'
 API_KEY = 'og25ZUOIdMamTMP7Uqf3NPCq'
 SECRET_KEY = '3cc188a371ec6ae962c26a08f112a733'
+
+print('READ:' + sys.argv[1])
 tts = BaiduTTS(API_KEY, SECRET_KEY)
 sound_buffer = tts.say(sys.argv[1])
 
