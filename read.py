@@ -12,4 +12,4 @@ sound_buffer = tts.say(sys.argv[1])
 
 sound_buffer.write('audio.mp3')
 #os.system('mplayer -q "audio.mp3"')
-os.system('mpg123 -q audio.mp3 && rm audio.mp3')
+os.system('mpg123 -q audio.mp3 && rm -f audio.mp3')
