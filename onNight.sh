@@ -34,7 +34,7 @@ do
 		getTip $i
 		msg=${TIPS[$?]}
         python read.py $msg &
-        sleep 600000
+        sleep 600
     else
         echo "电视没开着"
         break
