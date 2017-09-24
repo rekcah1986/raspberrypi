@@ -1,11 +1,13 @@
 # 加上sudo结果才能稳定
-#ESSID='ESSID:"DIRECT-D3-BRAVIA"' # TV wifi
-ESSID='ESSID:"WD"'
-tmp=$(sudo iwlist wlan0 scanning |grep $ESSID)
-if [[ $tmp =~ $ESSID ]]
+ESSID='ESSID:"DIRECT-JU-BRAVIA"' # TV wifi
+#ESSID='ESSID:"WD"'
+tmp=$(sudo iwlist wlan1 scanning |grep $ESSID)
+if test ${#tmp} -eq 0 
 then
+    echo 'tv off'
     exit 1
 else
+    echo 'tv on'
     exit 0
 fi
 
