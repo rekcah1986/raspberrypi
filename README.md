@@ -11,3 +11,7 @@
 #### read.py 文字转语音
 #### updateMusic.sh 下载网易云歌单，并生成clock.lst
 #### weather.py 获取天气，并朗读
+
+
+###
+注意：安装baidu_tts要使用sudo，不然启动脚本无法调用语音
