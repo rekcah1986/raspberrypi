@@ -10,7 +10,7 @@
 
 
 NAME=natapp
-DAEMON=/home/pi/Scripts/natapp/$NAME
+DAEMON=/home/pi/Documents/raspberrypi/natapp/$NAME
 PIDFILE=/var/run/$NAME.pid
 
 [ -x "$DAEMON" ] || exit 0
