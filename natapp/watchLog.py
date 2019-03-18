@@ -48,7 +48,7 @@ class LogSystemEventHandler(FileSystemEventHandler):
                     if(curURL != url):
                         #print("changed:%s" % url)
                         curURL = url
-                        sendEmail.send_warning_mail(curURL, "IP changed.")
+                        sendEmail.send_warning_mail(curURL, "")
 
 if __name__ == "__main__":
     path = sys.argv[1] if len(sys.argv) > 1 else './log'
