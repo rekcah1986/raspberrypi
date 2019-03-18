@@ -1,1 +1,3 @@
 natapp/config.ini
+*.pyc
+natapp/log
